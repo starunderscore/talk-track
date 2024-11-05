@@ -12,15 +12,26 @@ npm install @spirit-code/talk-track
 
 ## Usage
 
-### Basic Logging
+### Configuring Talk-Track
 
-To use Talk-Track, simply import the `log` function and provide it with a `role` and `message`. All messages in a session will be stored in a single JSON file with a unique timestamp.
+To configure Talk-Track dynamically, use the `config` method. You can enable or disable console logging by setting `debug` to `true` or `false`.
 
 #### Example
 
-```typescript
-import * as talkTrack from '@spirit-code/talk-track';
+```javascript
+const talkTrack = require('@spirit-code/talk-track');
 
+// Enable debug logging
+await talkTrack.config({ debug: true });
+```
+
+### Basic Logging
+
+Once configured, you can start logging messages. Simply use the `log` method and provide a `role` and `message`. All messages in a session will be stored in a single JSON file with a unique timestamp.
+
+#### Example
+
+```javascript
 talkTrack.log({
   role: 'user',
   message: 'Hello, Talk-Track!'
@@ -37,12 +48,24 @@ talkTrack.log({
 Talk-Track saves logs to the following directory structure:
 
 ```
-./@spirit-code/talk-track/<timestamp>.json
+./.spirit-code/talk-track/<timestamp>.json
 ```
 
 Each log file is named by the session start timestamp and contains an array of conversation entries, allowing you to store a full back-and-forth conversation in one file.
 
 ## API
+
+### `talkTrack.config({ debug: boolean })`
+
+Configures Talk-Track with custom settings.
+
+- **debug**: `boolean` — Enables or disables console logging. Set `debug: true` to allow console logs during logging operations.
+
+#### Example
+
+```javascript
+await talkTrack.config({ debug: true });
+```
 
 ### `talkTrack.log({ role, message })`
 

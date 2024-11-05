@@ -1,6 +1,6 @@
 {
   "name": "@spirit-code/talk-track",
-  "version": "1.0.0",
+  "version": "1.0.9",
   "description": "A tool for logging and archiving conversation data for AI applications.",
   "main": "lib/talk-track.js",
   "scripts": {
@@ -8,5 +8,13 @@
   },
   "author": "Your Name",
   "license": "MIT",
-  "keywords": ["logging", "AI", "debugging", "spirit-code"]
+  "keywords": [
+    "logging",
+    "AI",
+    "debugging",
+    "spirit-code"
+  ],
+  "dependencies": {
+    "uuid": "^11.0.2"
+  }
 }
