@@ -1,4 +1,4 @@
-# @spirit-code/talk-track
+# @maverick-spirit/talk-track
 
 **Talk-Track** is a logging tool for recording full conversation sessions between users and AI, allowing you to log multiple back-and-forth messages within a single JSON file for each session.
 
@@ -7,7 +7,7 @@
 Install Talk-Track from npm:
 
 ```bash
-npm install @spirit-code/talk-track
+npm install @maverick-spirit/talk-track
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ To configure Talk-Track dynamically, use the `config` method. You can enable or 
 #### Example
 
 ```javascript
-const talkTrack = require('@spirit-code/talk-track');
+const talkTrack = require('@maverick-spirit/talk-track');
 
 // Enable debug logging
 await talkTrack.config({ debug: true });
@@ -48,7 +48,7 @@ talkTrack.log({
 Talk-Track saves logs to the following directory structure:
 
 ```
-./.spirit-code/talk-track/<timestamp>.json
+./.maverick-spirit/talk-track/<timestamp>.json
 ```
 
 Each log file is named by the session start timestamp and contains an array of conversation entries, allowing you to store a full back-and-forth conversation in one file.

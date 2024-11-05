@@ -16,5 +16,13 @@
   ],
   "dependencies": {
     "uuid": "^11.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spirit-riddle/talk-track"
+  },
+  "bugs": {
+    "url": "https://github.com/spirit-riddle/talk-track/issues"
+  },
+  "homepage": "https://github.com/spirit-riddle/talk-track#readme"
 }
