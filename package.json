@@ -1,6 +1,6 @@
 {
   "name": "@maverick-spirit/talk-track",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A tool for logging and archiving conversation data for AI applications.",
   "main": "lib/talk-track.js",
   "scripts": {
